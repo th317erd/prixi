@@ -1,0 +1,34 @@
+{
+  "name": "prixi",
+  "version": "1.0.1",
+  "description": "Beef up your Javascript classes by turning them into proxies",
+  "main": "lib/index",
+  "type": "commonjs",
+  "scripts": {
+    "coverage": "clear ; node ./node_modules/.bin/nyc ./node_modules/.bin/jasmine",
+    "test": "node ./node_modules/.bin/jasmine",
+    "test-debug": "node --inspect-brk ./node_modules/.bin/jasmine",
+    "test-watch": "watch 'clear ; node ./node_modules/.bin/jasmine' . --wait=2 --interval=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/th317erd/prixi.git"
+  },
+  "keywords": [
+    "proxy",
+    "class"
+  ],
+  "author": "Wyatt Greenway",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/th317erd/prixi/issues"
+  },
+  "homepage": "https://github.com/th317erd/prixi#readme",
+  "devDependencies": {
+    "@spothero/eslint-plugin-spothero": "github:spothero/eslint-plugin-spothero",
+    "colors": "^1.4.0",
+    "diff": "^5.1.0",
+    "eslint": "^8.42.0",
+    "jasmine": "^5.0.1"
+  }
+}
